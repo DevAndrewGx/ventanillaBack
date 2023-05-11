@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #2472b5;
+    --secondary-color: #96bd26;
+    --background-principal: #F7F6F3;
+    --white: #ffffff;
+}
+
+h2.title-section{
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.fila-dependencias{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-depedencias{
+    border: 0;
+    background: #ffffff;
+    padding: 0;
+    border-radius: 0;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 15%);
+    position: relative;
+    margin-bottom: 40px;
+}
+.btn-depedencias::after{
+    width: 0%;
+    bottom: 0;
+    content: "";
+    background: var(--primary-color);
+    left: 0;
+    right: 0;
+    height: 3px;
+    transition: .3s;
+    position: absolute;
+    margin: 0 auto;
+}
+.btn-depedencias:hover::after{
+    width: 100%;
+}
+
+.btn-depedencias .cont-img{
+    height: 240px;
+    overflow: hidden;
+}
+.btn-depedencias .cont-img img{
+    transition: .4s;
+}
+.btn-depedencias:hover .cont-img img{
+    transform: scale(1.1);
+}
+
+.btn-depedencias .cont-info h3{
+    font-size: 16px;
+    color: var(--primary-color);
+}
+button{
+    text-transform: none !important;
+}
+.btn-depedencias .cont-info{
+    padding: 4px 14px;
+}
+.btn-depedencias .cont-info p{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+
+/*DIRECCIONES*/
+.btn-direccion{
+    border: 0;
+    background: #ffffff;
+    padding: 0;
+    border-radius: 0;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 15%);
+    position: relative;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    transition: .4s;
+}
+.btn-direccion .cont-img{
+    width: 30%;
+    background: var(--primary-color);
+    padding: 10px;
+    transition: .4s;
+}
+.btn-direccion .cont-img img{
+    height: 100%;
+    position: relative;
+    width: 80%;
+    transition: .4s;
+}
+.btn-direccion .cont-info{
+    padding: 10px 20px;
+    width: 70%;
+}
+.btn-direccion .cont-info h3{
+    font-size: 16px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-direccion:hover .cont-img{
+    background: var(--secondary-color);
+}
+
+.btn-direccion:hover .cont-img img{
+    transform: scale(1.1);
+}

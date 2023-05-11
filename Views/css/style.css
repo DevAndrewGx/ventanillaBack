@@ -1,0 +1,389 @@
+:root {
+    --primary-color: #2472b5;
+    --secondary-color: #96bd26;
+    --background-principal: #F7F6F3;
+    --white: #ffffff;
+}
+
+#contPage h2 {
+    margin: 26px 0 20px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+#contPage h1 {
+    margin: 30px 0;
+    color: var(--primary-color);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+h3 {
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+#contPage .card-ventanilla p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: #5b5b5b;
+}
+
+button {
+    padding: 8px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 12px 6px;
+}
+
+button.btn-primary {
+    background: var(--primary-color);
+    color: #ffffff;
+    transition: .5s;
+    border: 2px solid var(--primary-color);
+}
+
+button.btn-primary:hover {
+    background: var(--secondary-color);
+    color: #ffffff;
+    border: 2px solid var(--secondary-color);
+}
+
+button.btn-secondary {
+    background: #808080;
+    color: #ffffff;
+    transition: .5s;
+    border: 2px solid #808080;
+}
+
+button.btn-secondary:hover {
+    background: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #484848;
+}
+
+#contPage .card {
+    padding: 30px;
+    max-width: 1140px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 5px 1px rgb(189 189 189);
+
+}
+
+.mtc-2 {
+    margin-top: 40px;
+}
+h2.bold{
+    font-weight: 700 !important;
+}
+
+.card form .fila {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.form-group {
+    margin: 10px 20px;
+    margin: 0 auto;
+}
+
+form {
+    max-width: 890px;
+    margin: 0 auto;
+}
+
+input.campo,
+textarea.campo,
+select.campo {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: 1px solid #afafaf;
+    min-width: 240px;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+input:active,input:focus,input:focus-visible,
+textarea:active,textarea:focus,textarea:focus-visible,
+select:active,select:focus,select:focus-visible{
+    border: 1px solid var(--primary-color);
+    outline: none;
+}
+
+select.campo {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: 1px solid #afafaf;
+    min-width: 240px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+form input.form-check {
+    width: 35px;
+    margin: 0 auto;
+}
+
+#autorizacion.Inactive {
+    display: none;
+}
+
+#step2 {
+    display: none;
+}
+
+#actividades,#logros, #dificultades{
+    position: relative;
+}
+button.btnAgregar{
+    background: transparent;
+    border: 0px transparent;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: -44px;
+    top: 70px;
+    max-width: 40px;
+}
+button.btnAgregar img{
+    width: 40px;
+}
+#step2.Active {
+    display: block;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .wizard {
+        padding: 10px 16px;
+        max-width: 100%
+    }
+    .wizard .container .row ul li {
+        display: none !important
+    }
+    .wizard .container .row ul li:nth-child(1)::after {
+        width: 60% !important
+    }
+    .wizard .container .row ul li:nth-child(2)::after {
+        width: 90% !important
+    }
+    .wizard .container .row ul li:nth-child(3)::after {
+        width: 120% !important
+    }
+    .wizard .container .row ul li:nth-child(4)::after {
+        width: 150% !important
+    }
+    .wizard .container .row ul li:nth-child(5)::after {
+        width: 170% !important
+    }
+    .wizard .container .row ul li:nth-child(6)::after {
+        width: 210% !important
+    }
+    .wizard .container .row ul li.active-item {
+        /* float: left; */
+        width: 48%;
+        text-align: left;
+        display: flex !important
+    }
+    .wizard .container .row ul li.active-item p {
+        font-size: 14px
+    }
+    .wizard .container .row ul li.active-item i {
+        margin-right: 10px
+    }
+    .wizard .container .row .paginator-mobile {
+        display: block !important
+    }
+    .wizard .container .row .container-button-show {
+        display: block
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 320px) {
+    #contPage .marcas img {
+        height: 60px;
+    }
+    button.btnAgregar{
+        right: 0;
+    }
+    .wizard {
+        padding: 10px 16px;
+        max-width: 100%
+    }
+    .wizard .container .row ul li {
+        display: none !important
+    }
+    .wizard .container .row ul li:nth-child(1)::after {
+        width: 60% !important
+    }
+    .wizard .container .row ul li:nth-child(2)::after {
+        width: 90% !important
+    }
+    .wizard .container .row ul li:nth-child(3)::after {
+        width: 120% !important
+    }
+    .wizard .container .row ul li:nth-child(4)::after {
+        width: 150% !important
+    }
+    .wizard .container .row ul li:nth-child(5)::after {
+        width: 170% !important
+    }
+    .wizard .container .row ul li:nth-child(6)::after {
+        width: 210% !important
+    }
+    .wizard .container .row ul li.active-item {
+        /* float: left; */
+        width: 48%;
+        text-align: left;
+        display: flex !important
+    }
+    .wizard .container .row ul li.active-item p {
+        font-size: 14px
+    }
+    .wizard .container .row ul li.active-item i {
+        margin-right: 10px
+    }
+    .wizard .container .row .paginator-mobile {
+        display: block !important
+    }
+    .wizard .container .row .container-button-show {
+        display: block
+    }
+    
+    
+}
+
+
+/* wizard */
+
+.wizard {
+    background: #fff;
+    padding: 14px 12px 10px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+    border-top: 1px solid #ccc;
+    border-bottom: 5px solid #ccc;
+    width: 100%;
+    position: fixed;
+    top: 92px
+}
+
+.wizard.finish .container::after {
+    width: 100%;
+    background: var(--primary-color);
+    height: 5px;
+    right: -94%;
+    bottom: -15px;
+    position: absolute;
+    content: ""
+}
+.wizard .container {
+    position: relative
+}
+.wizard .container::before {
+    width: 100%;
+    background: var(--primary-color);
+    height: 5px;
+    left: -99%;
+    bottom: -15px;
+    position: absolute;
+    content: ""
+}
+.wizard .container .row ul {
+    justify-content: space-between;
+    padding: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    display: flex;
+}
+.wizard .container .row ul li {
+    display: flex;
+    width: 16.6%;
+    position: relative;
+    align-items: center;
+}
+.wizard .container .row ul li i {
+    font-size: 26px;
+    color: #999999;
+    margin-right: 10px;
+}
+.wizard .container .row ul li p {
+    font-size: 12px;
+    color: #999;
+    text-align: left;
+    line-height: 14px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0;
+}
+.wizard .container .row ul li.active-item p {
+    color: #333;
+    margin-bottom: 0;
+}
+.wizard .container .row ul li.active-item i {
+    color: var(--primary-color)
+}
+.wizard .container .row ul li.active-item::after {
+    width: 103%;
+    background: var(--primary-color);
+    height: 5px;
+    left: 0%;
+    bottom: -15px;
+    position: absolute;
+    content: ""
+}
+.wizard .container .row ul li:nth-child(6).active-item::after{
+    width: 210%;
+    background: var(--primary-color);
+    height: 5px;
+    left: 0%;
+    bottom: -15px;
+    position: absolute;
+    content: ""
+}
+.wizard .container .row .paginator-mobile {
+    display: none;
+    position: absolute;
+    right: 15%
+}
+.wizard .container .row .paginator-mobile p {
+    font-size: 16px;
+    color: #999
+}
+.wizard .container .row .paginator-mobile p b {
+    font-size: 20px;
+    color: #253150
+}
+.wizard .container .row .container-button-show {
+    position: absolute;
+    right: 5px;
+    display: none
+}
+.wizard .container .row .container-button-show .button-show-sumary {
+    border: 1px solid #999;
+    padding: 4px 5px 0px;
+    border-radius: 50%;
+    cursor: pointer
+}
+.wizard .container .row .container-button-show .button-show-sumary i {
+    transition: .3s
+}
+.wizard .container .row .container-button-show .button-show-sumary.rotate i {
+    transform: rotate(-180deg)
+}
+
+.hide{
+    display: none;
+}
